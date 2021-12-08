@@ -9,7 +9,7 @@ namespace Animaciones {
      * @param y indica la coordenada horizontal de la matriz de led (1-5)
      * @param t indica el tiempo de intervalo del parpadeo en ms (mili segundos)
      */
-    //% block = "parpadea un LED de coordenadas x= $x y= $y por $t ms."
+    //% block="parpadea LED en x $x y $y por $t ms."
     export function parpadeo(x: number, y: number, t: number): void {
         let sprite = game.createSprite(x-1,y-1) 
         sprite.setBlink(t) 
