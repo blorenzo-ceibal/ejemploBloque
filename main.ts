@@ -5,3 +5,6 @@ for (let index = 0; index <= 10; index++) {
 basic.forever(function () {
 	
 })
+basic.forever(function () {
+	
+})
