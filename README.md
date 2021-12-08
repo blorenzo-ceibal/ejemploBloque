@@ -1,6 +1,16 @@
 
 > Abra esta pagina en [https://blorenzo-ceibal.github.io/ejemplobloque/](https://blorenzo-ceibal.github.io/ejemplobloque/)
 
+## Animaciones (Uso)
+
+### Parpadeo
+
+Hace parpadear un LED en las coordenadas (x,y) de la matriz de LED de la placa Microbit V1/1.5/2 cada un intervalo de tiempo en milisegundos indicado
+
+```blocks
+Animaciones.parpadeo(1, 1, 500)
+```
+Ej: Parpadea el LED del extremo superior izquierdo de la matriz cada 500 ms.
 ## Usar como extensión
 
 Este repositorio puede ser añadido como una **extensión** en MakeCode.
@@ -17,13 +27,6 @@ Para editar este repositorio en MakeCode.
 * abra [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * haga clic en **Import** luego haga clic en **Import URL**
 * pegue **https://github.com/blorenzo-ceibal/ejemplobloque** y haga clic en importar
-
-## Vista previa de bloques
-
-Esta imagen muestra el código de los bloques de la última confirmación en master.
-Esta imagen puede tardar unos minutos en actualizarse.
-
-![Una vista renderizada de los bloques](https://github.com/blorenzo-ceibal/ejemplobloque/raw/master/.github/makecode/blocks.png)
 
 #### Metadatos (utilizados para búsqueda, renderizado)
 
