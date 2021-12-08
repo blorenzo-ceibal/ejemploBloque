@@ -8,8 +8,11 @@
 Hace parpadear un LED en las coordenadas (x,y) de la matriz de LED de la placa Microbit V1/1.5/2 cada un intervalo de tiempo en milisegundos indicado
 
 ```blocks
-Animaciones.parpadeo(1, 1, 500)
+basic.forever(function () {
+    Animaciones.parpadeo(1, 1, 500)
+})
 ```
+
 Ej: Parpadea el LED del extremo superior izquierdo de la matriz cada 500 ms.
 ## Usar como extensión
 
