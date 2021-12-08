@@ -1,30 +1,19 @@
-
 /**
-* Utilice este archivo para definir funciones y bloques personalizados.
-* Lea más en https://makecode.microbit.org/blocks/custom
-*/
-
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
-
-/**
- * Custom blocks
+ * Ploque personalizado
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace custom {
+namespace Animaciones {
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
+     * Parpadea el LED indicado de la matriz cada un cierto intervalo de tiempo
+     * @param x indica la coordenada horizontal de la matriz de led (1-5)
+     * @param y indica la coordenada horizontal de la matriz de led (1-5)
+     * @param t indica el tiempo de intervalo del parpadeo en ms (mili segundos)
      */
-    //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
+    //% block = "parpadea un LED de coordenadas x= $x y= $y por $t ms."
+    export function parpadeo(x: number, y: number, t: number): void {
+        let sprite = game.createSprite(x-1,y-1) 
+        sprite.setBlink(t) 
+        sprite.blink()
     }
 
     /**
